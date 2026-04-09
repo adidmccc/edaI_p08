@@ -27,5 +27,16 @@ bool lista_insertar_inicio(DLista *l, void *info, size_t size){
 
 bool lista_insertar_final(DLista *l, int pos, void *info, size_t s){
     if (!l) return false;
-    IF (Dlista_es_vacia(l)) return lista_insertar_inicio(l, info, size);
+    if (lista_es_vacia(l)) return lista_insertar_inicio(l, vacia, s);
+    if (pos == 0) return lista_insertar_inicio(l, info, s);
+    if (pos == lista_num_nodos(l)) return lista_insertar_final(l, info, s);
+    if (pos >= 1 && pos< (lista_num_nodos(l)-1)){
+        Nodo 
+    } //completar
+}
+
+int lista_num_nodos(DLista *l){
+    int i = 0;
+    for(Nodo *tmp = l-> head; tmp != NULL; tmp = tmp -> sig, i++);
+    return i;
 }

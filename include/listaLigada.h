@@ -22,4 +22,6 @@ void lista_eliminar_inicio();
 void lista_eliminar_final();
 void lista_eliminar_x_pos();
 
+
+int lista_num_nodos(DLista *l);
 #endif
